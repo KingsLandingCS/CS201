@@ -19,3 +19,5 @@ int main()
         cout << "Amara is older than Amir\n";
     }
 }
+
+// Selection Structure is achieved by using (if - else statement)
