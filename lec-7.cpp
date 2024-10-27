@@ -7,11 +7,12 @@ main()
     //  do while loop - atleast executes the block qoute once before checking the condition
     //  for loop - first checks the conditon
 
-    int start = 1;
+    char choice;
     do
     {
         cout << " Hello World!" << endl;
-        cout << "Loop no. :" << start << endl;
-        start++;
-    } while (start <= 5);
+        cout << "Do you want to continue? (Y/N): ";
+        cin >> choice;
+
+    } while (choice == 'y' || choice == 'Y');
 }
