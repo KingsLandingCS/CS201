@@ -12,9 +12,9 @@ int test(int a, int b) // ==> child function
 int main() // ==> parent function
 {
 
-    int a = 10, b = 20, z = 0;
-    z = test(a, b);
-    cout << "Sum is : " << z << endl;
+    // int a = 10, b = 20, z = 0;
+    int a = 10, b = 20;
+    cout << "Sum is : " << test(a, b) << endl;
     // getch();
     return 0;
 };
