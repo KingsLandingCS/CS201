@@ -2,8 +2,6 @@
 // #include <conio.h>
 using namespace std;
 
-// binary search
-
 void getValues(int a[], int n)
 {
     cout << " Enter 5 Values: ";
