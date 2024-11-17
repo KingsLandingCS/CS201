@@ -5,9 +5,16 @@ using namespace std;
 int main()
 {
 
-    char array[5] = {'A', 'H', 'I', 'Z'};
+    char a[100] = {'j', 'n'};
 
-    cout << array << endl;
+    for (int i = 0; i <= 99; i++)
+    {
+        if (a[i] == '\0')
+        {
+            break;
+        }
+        cout << " " << a[i] << endl;
+    }
 
     // getch();
     return 0;
