@@ -10,9 +10,10 @@ int main()
     {
         for (int j = 0; j <= 2; j++)
         {
-            cout << " " << a[i][j] << endl;
+            cout << " " << a[i][j];
         }
-    }
+        }
+    cout << endl;
     // getch();
     return 0;
 }
