@@ -2,6 +2,7 @@
 // #include <conio.h>
 using namespace std;
 
+// bubble sort
 int main()
 {
     int a[5] = {15, 2, 7, 4, 1};
