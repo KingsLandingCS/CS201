@@ -12,7 +12,7 @@ int main()
         {
             cout << " " << a[i][j];
         }
-        }
+    }
     cout << endl;
     // getch();
     return 0;
