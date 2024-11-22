@@ -9,6 +9,7 @@ main()
     ptr1 = &x;
     ptr2 = &y;
 
+    // swapping
     *ptr1 = *ptr1 + *ptr2; // ptr1 = 30
     *ptr2 = *ptr1 - *ptr2; // ptr2 = 10
     *ptr1 = *ptr1 - *ptr2; // ptr1 = 20
