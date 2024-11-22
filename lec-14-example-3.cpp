@@ -4,7 +4,7 @@ using namespace std;
 
 void convert(char *str) // char *str: Takes a pointer to the first character of the string. The string is passed by reference, so changes made here directly modify the original string.
 {
-    while (*str != '\0')  // Loop until we reach the end of the string
+    while (*str != '\0') // Loop until we reach the end of the string
     {
         if (islower(*str))
         {
@@ -22,6 +22,13 @@ main()
     // getch();
     return 0;
 }
+
+// A character array str of size 30 is initialized with the string "Welcome to Virtual University".
+// In memory, it looks like this:
+// arduino
+// Copy code
+// 'W', 'e', 'l', 'c', 'o', 'm', 'e', ' ', 't', 'o', ' ', 'V', 'i', 'r', 't', 'u', 'a', 'l', ' ', 'U', 'n', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y', '\0'
+// The \0 (null terminator) marks the end of the string.
 
 // In the code, we use *str and str for different purposes because they refer to different aspects of the pointer and its usage. Let me explain in detail:
 
