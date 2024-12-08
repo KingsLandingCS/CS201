@@ -10,7 +10,7 @@ int main()
     float salary;
     string name;
     ifstream myFile;
-    myFile.open("../lec-18/data.txt");
+    myFile.open("../lec-18/info.txt");
 
     // Check if the file is opened successfully
     if (!myFile)
