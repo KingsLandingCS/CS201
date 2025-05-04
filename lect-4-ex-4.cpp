@@ -7,7 +7,7 @@ int main()
     string gender;
     cout << "Enter your gender: ";
     cin >> gender;
-    
+
     // Convert input to lowercase
     transform(gender.begin(), gender.end(), gender.begin(), ::tolower);
 
