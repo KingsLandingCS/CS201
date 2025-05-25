@@ -23,7 +23,7 @@ main()
         cout << *ptr << endl; // pointer with asterisk prints the value stored in the variable, and pointer without asterisk prints the address
         ptr++;
     }
-    cout << endl;
+    
 
     // getch();
     return 0;

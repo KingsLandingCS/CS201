@@ -2,7 +2,7 @@
 // #include <conio.h>
 using namespace std;
 
-main()
+int main()
 {
     char str[30] = "RavenWood";
     char *ptr;

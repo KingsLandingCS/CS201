@@ -3,7 +3,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     char ch;
     for (int i = 0; i <= 255; i++)
@@ -13,6 +13,8 @@ main()
     }
 
     cout << endl;
+
+    return 0;
 
     // getch();
 }
