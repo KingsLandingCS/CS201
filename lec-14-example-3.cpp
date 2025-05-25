@@ -14,7 +14,7 @@ void convert(char *str) // char *str: Takes a pointer to the first character of 
     }
 }
 
-main()
+int main()
 {
     char str[30] = "Welcome to Virtual University";
     convert(str);
