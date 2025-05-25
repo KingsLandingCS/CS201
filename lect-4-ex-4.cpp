@@ -19,6 +19,5 @@ int main()
     {
         cout << "You're male" << endl;
     }
-
     return 0;
 }

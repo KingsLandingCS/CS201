@@ -9,12 +9,13 @@ int main()
 
     for (int i = 0; i <= 99; i++)
     {
-        if (a[i] == '\0')
         {
+        if (a[i] == '\0')
             break;
         }
-        cout << " " << a[i] << endl;
+        cout << " " << a[i];
     }
+    cout << endl;
 
     // getch();
     return 0;

@@ -15,6 +15,7 @@ void pow()
     for (int i = 1; i <= limit; i++)
     {
         result *= number;
+        cout << number << "^" << i << " = " << result << endl;
     }
     cout << "Result is : " << result << endl;
 }
