@@ -8,7 +8,7 @@ struct Student
     string name;
 } S1, S2;
 
-int main()
+void takeInput()
 {
     cout << "Enter Student Id:" << endl;
     cin >> S1.id;
@@ -23,7 +23,10 @@ int main()
     cin >> S2.name;
     cout << "Enter Student Marks: " << endl;
     cin >> S2.marks;
+}
 
+void displayOutput()
+{
     cout << "Student Id: " << S1.id << endl;
     cout << "Student Name: " << S1.name << endl;
     cout << "Student Marks: " << S1.marks << endl;
@@ -31,5 +34,11 @@ int main()
     cout << "Student Id: " << S2.id << endl;
     cout << "Student Name: " << S2.name << endl;
     cout << "Student Marks: " << S2.marks << endl;
+}
+
+int main()
+{
+    takeInput();
+    displayOutput();
     return 0;
 }
