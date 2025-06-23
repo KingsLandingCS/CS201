@@ -26,7 +26,6 @@ void displayOutput()
 {
     for (int i = 0; i <= 4; i++)
     {
-        
         cout << "Student Id: " << S[i].id << endl;
         cout << "Student Name: " << S[i].name << endl;
         cout << "Student Marks: " << S[i].marks << endl;
