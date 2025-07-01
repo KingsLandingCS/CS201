@@ -124,8 +124,6 @@ int main()
 // memory to stay even after the function ends.
 // to create arrays, lists, or objects with flexible sizes.
 
-
-
 // ✅ Heap and Stack are both inside RAM
 // When you run a program, your operating system gives it some memory from RAM. This memory is divided into different regions:
 
@@ -145,3 +143,43 @@ int main()
 // Stack: Automatically managed memory (local variables, function calls).
 
 // Heap: Manually managed memory (using new, delete, or malloc, free).
+
+// 🛠️ 1. Compile-Time
+// Definition:
+// The phase when your code is translated from C++ (or any language) into machine code (executable .exe, .out, etc.) by a compiler.
+// 🔍 What happens at compile-time:
+// Syntax checking (;, {}, variable declarations)
+// Type checking (int, string, etc.)
+// Converting human-readable code into binary
+// Memory layout for static and global variables
+// Detects many kinds of errors (like missing ;, undeclared variables)
+// 📌 Example:
+// int a = "hello"; // ❌ Type mismatch error caught at compile-time
+// This will give an error before the program runs.
+
+// 🚀 2. Run-Time
+// Definition:
+// The phase when the compiled program is executed by the computer — you’re actually running the app.
+// 🔍 What happens at run-time:
+// Input/output operations
+// Logic execution (loops, conditions)
+// Memory allocation (new, malloc)
+// Interaction with the operating system
+// Run-time errors (like divide by zero, null pointer access)
+// 📌 Example:
+// int a = 5, b = 0;
+// int c = a / b; // ❌ Run-time error: division by zero
+// This compiles fine, but crashes while running.
+
+// 🧠 Key Differences:
+// Feature	Compile-Time	Run-Time
+// When it happens	Before program runs	While program runs
+// Who handles it	Compiler	CPU + OS
+// Errors detected	Syntax, type, missing variables	Division by zero, null pointer, etc.
+// Examples	int a = "text";	int x = 10/0;
+
+
+// 🧪 Analogy:
+// Imagine you’re baking a cake:
+// Compile-time = Reading the recipe, preparing ingredients (you check if you have everything).
+// Run-time = Actually baking the cake (you find out if the oven breaks, or the cake burns).
