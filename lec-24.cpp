@@ -48,9 +48,35 @@ int main()
 
     // ptr2++ now moves to the next memory address, i.e., [1]
 
+    // Calculates the average age by dividing the sum (totalAges) by the number of students.
+    // Then, it prints the result to the screen.
+    // 🚨 Note: Since both totalAges and numberOfStudent are int, this does integer division (e.g., 35 / 4 = 8).
     cout << "Average Age: " << totalAges / numberOfStudent;
+
+    // Releases the dynamically allocated memory created by malloc.
+    //  You must do this to prevent memory leaks in C/C++.
+    //  If you forget this, the memory stays allocated until your program ends. In larger programs, this can eat up memory over time.
     free(ptr1);
+
+    // After freeing the memory, we make ptr2 point to NULL (i.e., nowhere).
+    // This is good practice to avoid dangling pointers (i.e., pointers pointing to deleted memory).
     ptr2 = NULL;
 
     return 0;
 }
+
+// ⚠️ 2. What is a Memory Leak?
+// ❗ Definition:
+// A memory leak happens when you allocate memory on the heap but never free it, and you also lose the pointer to it.
+// 📌 Why it's bad:
+// Over time, memory leaks can use up all available RAM.
+// Your program becomes slow or even crashes in large applications.
+
+// ⚠️ 3. What is a Dangling Pointer?
+// ❗ Definition:
+// A dangling pointer is a pointer that still points to memory that has already been freed.
+// 📌 Why it's dangerous:
+// Accessing it may cause your program to crash or corrupt data.
+// It's like pointing to a house that has been demolished.
+// Even though ptr still exists, the memory it pointed to no longer belongs to your program.
+// ✅ To fix: Always set the pointer to NULL after free.
