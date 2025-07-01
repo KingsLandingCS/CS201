@@ -23,7 +23,7 @@ int main()
     // *ptr2 is the value stored at the memory location that ptr2 points to.
     // This is called dereferencing the pointer.
     ptr2 = ptr1;
-    for (int i = 1; i <= numberOfStudent; i++)
+    for (int i = 1; i <= numberOfStudent; i++) //Why don’t we start the loop with i = numberOfStudent? This loop runs from student 1 to student n, forward, like: But if you write: for (int i = numberOfStudent; i <= ???; i++), Then you have a problem: The loop starts at the last student, e.g., i = 5, But i <= numberOfStudent is only true for one time
     {
         cout << "Enter Age of Student " << i << ": ";
         cin >> *ptr2;
