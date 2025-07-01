@@ -80,3 +80,68 @@ int main()
 // It's like pointing to a house that has been demolished.
 // Even though ptr still exists, the memory it pointed to no longer belongs to your program.
 // ✅ To fix: Always set the pointer to NULL after free.
+
+// 🧠 Imagine Your Program is a Kitchen 🍳
+// When you're cooking:
+
+// You use a counter (temporary space) to prepare food.
+
+// You also have a storage cabinet (long-term space) to store ingredients.
+
+// In your program:
+
+// The counter is like the stack — fast, temporary memory.
+
+// The cabinet is like the heap — slower, flexible memory.
+
+// 💡 What is the Heap in Programming?
+// The heap is a part of your computer's memory where your program can store things while it's running, but you decide how much and when to clean up.
+
+// Why use the heap?
+// When you don’t know the size of data at compile time.
+
+// When you want to store large or flexible data.
+
+// When you want the data to last even after a function ends.
+
+// 📦 Stack vs Heap (Simple Table)
+// Feature	Stack	Heap
+// Speed	Fast	Slower
+// Lifetime	Automatic (cleans itself)	Manual (you must clean it up)
+// Size	Fixed, small	Large, flexible
+// Syntax	Regular variable	new / malloc📦 Stack vs Heap (Simple Table)
+// Feature	Stack	Heap
+// Speed	Fast	Slower
+// Lifetime	Automatic (cleans itself)	Manual (you must clean it up)
+// Size	Fixed, small	Large, flexible
+// Syntax	Regular variable	new / malloc
+
+// ❓ Why Not Just Use Normal Variables?
+// Because normal variables:
+// disappear when the function ends.
+// can’t handle unknown sizes at runtime.
+// The heap is useful when you want:
+// memory to stay even after the function ends.
+// to create arrays, lists, or objects with flexible sizes.
+
+
+
+// ✅ Heap and Stack are both inside RAM
+// When you run a program, your operating system gives it some memory from RAM. This memory is divided into different regions:
+
+// sql
+// Copy
+// Edit
+// +-----------------------------+ <-- High memory address
+// |     Stack (local vars)     |
+// |----------------------------|
+// |     Heap (dynamic memory)  |
+// |----------------------------|
+// |     Data Segment           |
+// |----------------------------|
+// |     Code Segment (program) |
+// +-----------------------------+ <-- Low memory address
+// 💡 Summary:
+// Stack: Automatically managed memory (local variables, function calls).
+
+// Heap: Manually managed memory (using new, delete, or malloc, free).
