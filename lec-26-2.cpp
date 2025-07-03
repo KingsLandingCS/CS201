@@ -8,10 +8,17 @@ private:
     string name;
 
 public:
+    Student();
     void setData();
     void getData();
 };
-void Student::setData()
+
+Student::Student()
+{
+    id = 0;
+    name = "";
+}
+void Student::setData() // Scope resolution operator
 {
     id = 100;
     name = "Underwood";
