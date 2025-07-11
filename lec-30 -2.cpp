@@ -7,6 +7,7 @@ int main()
     // Pointer variable, pointer takes a separate block of memory as opposed to reference that works on the same block of memory, Pointer stores the address of another
     // variable's memory block
     int *ptr = &i;
-    cout << i << endl;
+    // cout << ptr << endl; ==> this will show the address in the console
+    cout << *ptr << endl; // ==> and this will show the value that is represent in the memory block also known as Dereferencing
     return 0;
 }
