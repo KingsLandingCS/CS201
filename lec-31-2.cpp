@@ -1,26 +1,29 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
-class A
+class addString
 {
 private:
-    int number;
+    char str1[25];
+    char str2[25];
 
 public:
-    A()
+    addString()
     {
-        number = 5;
+        strcpy(str1, "Zubair");
+        strcpy(str2, " UnderWood");
     }
-    void operator++()
+
+    void operator+()
     {
-        ++number;
-        cout << "Number: " << number << endl;
+        cout << "New String: " << strcat(str1, str2) << endl;
     }
 };
 
 int main()
 {
-    A obj;
-    ++obj;
+    addString obj;
+    +obj;
     return 0;
 }
