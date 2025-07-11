@@ -8,6 +8,7 @@ int main()
     // variable's memory block
     int *ptr = &i;
     // cout << ptr << endl; ==> this will show the address in the console
-    cout << *ptr << endl; // ==> and this will show the value that is represent in the memory block also known as Dereferencing
+    // cout << *ptr << endl;  ==> and this will show the value that is represent in the memory block also known as Dereferencing
+    cout << &ptr << endl; // ==> &ptr is known as address operator with '&' that shows the address of the pointer in the console
     return 0;
 }
