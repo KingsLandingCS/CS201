@@ -1,29 +1,25 @@
 #include <iostream>
 using namespace std;
-template <class T>
 
+template <class T>
 class myClass
 {
     T a;
 
 public:
-    myClass()
+    myClass() { a = 100; }
+
+    friend void display(myClass<T> &obj)
     {
-        a = 100;
+        cout << obj.a << endl;
     }
-    friend void display();
 
     ~myClass() {}
 };
 
-void display()
-{
-    myClass<int> obj;
-    cout << a;
-}
-
 int main()
 {
-    display();
+    myClass<int> obj;
+    display(obj);
     return 0;
 }
