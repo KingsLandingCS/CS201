@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    int number = 12;
-    cout << oct << number << endl;
+    cout << setw(50) << "Khizar Shahal" << endl;
     return 0;
 }
